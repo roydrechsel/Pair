@@ -12,6 +12,9 @@
 		54B3DB651E6B1E1D0016AA3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B3DB631E6B1E1D0016AA3D /* Main.storyboard */; };
 		54B3DB671E6B1E1D0016AA3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B3DB661E6B1E1D0016AA3D /* Assets.xcassets */; };
 		54B3DB6A1E6B1E1D0016AA3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B3DB681E6B1E1D0016AA3D /* LaunchScreen.storyboard */; };
+		54B3DB741E6B1F8C0016AA3D /* BandMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3DB731E6B1F8C0016AA3D /* BandMembers.swift */; };
+		54B3DB771E6B200E0016AA3D /* BandMembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3DB761E6B200E0016AA3D /* BandMembersTableViewController.swift */; };
+		54B3DB791E6B2C560016AA3D /* BandMembersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3DB781E6B2C560016AA3D /* BandMembersController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		54B3DB661E6B1E1D0016AA3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54B3DB691E6B1E1D0016AA3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54B3DB6B1E6B1E1D0016AA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B3DB731E6B1F8C0016AA3D /* BandMembers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BandMembers.swift; path = ../BandMembers.swift; sourceTree = "<group>"; };
+		54B3DB761E6B200E0016AA3D /* BandMembersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandMembersTableViewController.swift; sourceTree = "<group>"; };
+		54B3DB781E6B2C560016AA3D /* BandMembersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandMembersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,23 @@
 			children = (
 				54B3DB5F1E6B1E1D0016AA3D /* AppDelegate.swift */,
 				54B3DB611E6B1E1D0016AA3D /* ViewController.swift */,
+				54B3DB731E6B1F8C0016AA3D /* BandMembers.swift */,
+				54B3DB781E6B2C560016AA3D /* BandMembersController.swift */,
+				54B3DB761E6B200E0016AA3D /* BandMembersTableViewController.swift */,
+				54B3DB751E6B1F950016AA3D /* Resources */,
+			);
+			path = 29Pair;
+			sourceTree = "<group>";
+		};
+		54B3DB751E6B1F950016AA3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				54B3DB631E6B1E1D0016AA3D /* Main.storyboard */,
 				54B3DB661E6B1E1D0016AA3D /* Assets.xcassets */,
 				54B3DB681E6B1E1D0016AA3D /* LaunchScreen.storyboard */,
 				54B3DB6B1E6B1E1D0016AA3D /* Info.plist */,
 			);
-			path = 29Pair;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B3DB621E6B1E1D0016AA3D /* ViewController.swift in Sources */,
+				54B3DB791E6B2C560016AA3D /* BandMembersController.swift in Sources */,
 				54B3DB601E6B1E1D0016AA3D /* AppDelegate.swift in Sources */,
+				54B3DB771E6B200E0016AA3D /* BandMembersTableViewController.swift in Sources */,
+				54B3DB741E6B1F8C0016AA3D /* BandMembers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
