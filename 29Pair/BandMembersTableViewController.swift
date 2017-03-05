@@ -43,7 +43,8 @@ class BandMembersTableViewController: UITableViewController {
     @IBAction func randomizeButtonTapped(_ sender: Any) {
         
         //GKRandomSource in GameKit
-        
+        BandMembersController.shared.members.shuffle()
+        tableView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -57,14 +58,6 @@ class BandMembersTableViewController: UITableViewController {
         tableView.reloadData()
         
     }
-    
-    
-    
-    
-    
-    //IN STORYBOARD, I JUST GOT RID OF THE "bandMemberCell" IDENTIFIER! MAYBE I NEED TO HAVE TWO CELLS DISPLAYED, AND GIVE THEM BOTH IDENTIFIERS, THEN WRITE TWO CELLFORROWAT METHODS FOR EACH CELL??????????
-    
-    
     
     
 
@@ -145,13 +138,15 @@ class BandMembersTableViewController: UITableViewController {
 }
 
 
-//extension Array {
-//    
-//    var shuffled: Array {
-//        var elements = self
-//        return elements.shuffle()
-//    }
-//}
+extension Array {
+    
+    mutating func shuffle() {
+        
+        for _ in 0..<10 {
+            sort { (_,_) in arc4random() < arc4random() }
+        }
+    }
+}
 
 
 
